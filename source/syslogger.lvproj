@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -81,7 +82,9 @@
 		<Item Name="liblv_syslog.so" Type="Document" URL="../liblv_syslog.so"/>
 		<Item Name="write syslog.vi" Type="VI" URL="../write syslog.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="liblv_syslog.dll" Type="Document" URL="/usr/local/lib/liblv_syslog.dll"/>
+			<Item Name="liblv_syslog.so" Type="Document" URL="liblv_syslog.so">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
