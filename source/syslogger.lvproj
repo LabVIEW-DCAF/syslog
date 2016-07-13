@@ -20,7 +20,11 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="write syslog.vi" Type="VI" URL="../write syslog.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="liblv_syslog_armv7l.so" Type="Document" URL="../liblv_syslog_armv7l.so"/>
+			<Item Name="liblv_syslog_x86_64.so" Type="Document" URL="../liblv_syslog_x86_64.so"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
@@ -79,13 +83,10 @@
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
 			<Property Name="crio.Type" Type="Str">cRIO-9068</Property>
 		</Item>
-		<Item Name="liblv_syslog.so" Type="Document" URL="../liblv_syslog.so"/>
+		<Item Name="liblv_syslog_armv7l.so" Type="Document" URL="../liblv_syslog_armv7l.so"/>
+		<Item Name="liblv_syslog_x86_64.so" Type="Document" URL="../liblv_syslog_x86_64.so"/>
 		<Item Name="write syslog.vi" Type="VI" URL="../write syslog.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="liblv_syslog.so" Type="Document" URL="liblv_syslog.so">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
