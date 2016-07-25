@@ -21,10 +21,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="write syslog.vi" Type="VI" URL="../write syslog.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="liblv_syslog_armv7l.so" Type="Document" URL="/usr/local/lib/liblv_syslog_armv7l.so"/>
-			<Item Name="liblv_syslog_x86_64.so" Type="Document" URL="/usr/local/lib/liblv_syslog_x86_64.so"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
@@ -86,10 +83,7 @@
 		<Item Name="liblv_syslog_armv7l.so" Type="Document" URL="../liblv_syslog_armv7l.so"/>
 		<Item Name="liblv_syslog_x86_64.so" Type="Document" URL="../liblv_syslog_x86_64.so"/>
 		<Item Name="write syslog.vi" Type="VI" URL="../write syslog.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="liblv_syslog_armv7l.dll" Type="Document" URL="../liblv_syslog_armv7l.dll"/>
-			<Item Name="liblv_syslog_x86_64.dll" Type="Document" URL="../liblv_syslog_x86_64.dll"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
