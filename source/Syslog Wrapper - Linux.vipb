@@ -3,8 +3,8 @@
     <Package_File_Name>NI_lib_Syslog_Wrapper_Linux</Package_File_Name>
     <Library_Version>1.0.0.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
-    <Library_Source_Folder>source</Library_Source_Folder>
-    <Library_Output_Folder>.</Library_Output_Folder>
+    <Library_Source_Folder>.</Library_Source_Folder>
+    <Library_Output_Folder>..\..\export</Library_Output_Folder>
     <Company_Name>National Instruments</Company_Name>
     <Library_Summary/>
     <Library_License>Apache 2.0</Library_License>
